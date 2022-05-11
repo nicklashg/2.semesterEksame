@@ -1,3 +1,5 @@
+/* NAV MENU */
+
 let sidebar = document.querySelector(".sidebar");
 let closeBtn = document.querySelector("#btn");
 let searchBtn = document.querySelector(".bx-search");
@@ -21,3 +23,14 @@ function menuBtnChange(){
         closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
     }
 }
+
+/* COPY TEXT */
+
+function copyTextFunction() 
+{
+    var copyText = document.getElementById("copy-text");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
+}
+  

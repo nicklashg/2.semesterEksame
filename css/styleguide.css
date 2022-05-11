@@ -385,6 +385,44 @@ pre
   right: 0%;
 }
 
+.copy-btn:active
+{
+  background-color: #000;
+  opacity: 40%;
+  color: white;
+}
+
+.copy-btn::before
+{
+  content: "copied";
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  background: #fff;
+  padding: 4px;
+  border-radius: 8px;
+  font-size: 12px;
+  display: none;
+}
+
+.copy-btn::after
+{
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+
+.copy-btn:active::before, .copy-btn:active::after
+{
+  display: block;
+}
+
 .layout-container
 {
   background-color: rgb(165, 165, 165);
