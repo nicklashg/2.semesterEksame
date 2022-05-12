@@ -4,6 +4,8 @@
     padding: 0;
 }
 
+
+
 .flexbox-container
 {
     display: flex;
@@ -14,15 +16,17 @@
 
 .flexbox-item
 {
-    width: 1620px;
-    margin: 10px;
+    width: 84%;
+    max-width: 1920px;
     border: 3px solid #333;
     background-color: #dfdfdf;
+    height: 100%;
 }
 
 .flexbox-item-1
 {
-    min-height: 100px;
+    
+    min-height: 1080px;
 }
 
 .flexbox-item-2
@@ -34,3 +38,4 @@
 {
     min-height: 300px;
 }
+

@@ -388,7 +388,7 @@ pre
 .copy-btn:active
 {
   background-color: #000;
-  opacity: 40%;
+  
   color: white;
 }
 
@@ -396,6 +396,7 @@ pre
 {
   content: "copied";
   position: absolute;
+  color: #000;
   top: 30px;
   right: -10px;
   background: #fff;
@@ -403,11 +404,11 @@ pre
   border-radius: 8px;
   font-size: 12px;
   display: none;
+  
 }
 
 .copy-btn::after
 {
-  content: "";
   position: absolute;
   top: 25px;
   right: 10px;
