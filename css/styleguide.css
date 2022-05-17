@@ -383,12 +383,12 @@ pre
   position: absolute;
   top: 70%;
   right: 0%;
+  
 }
 
 .copy-btn:active
 {
   background-color: #000;
-  
   color: white;
 }
 

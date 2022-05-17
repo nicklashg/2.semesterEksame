@@ -4,7 +4,29 @@
     padding: 0;
 }
 
+h1
+{
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+}
 
+h2
+{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+h3
+{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p
+{
+    font-size: 20px;
+}
 
 .flexbox-container
 {
@@ -16,26 +38,88 @@
 
 .flexbox-item
 {
-    width: 84%;
+    width: 85%;
     max-width: 1920px;
     border: 3px solid #333;
     background-color: #dfdfdf;
-    height: 100%;
 }
 
 .flexbox-item-1
 {
-    
-    min-height: 1080px;
+    height: 940px;
 }
 
 .flexbox-item-2
 {
-    min-height: 200px;
+    min-height: 1050px;
 }
 
 .flexbox-item-3
 {
-    min-height: 300px;
+    min-height: 1360px;
 }
 
+.flexbox-item-4
+{
+    min-height: 428px;
+    width: 100%;
+    background-color: #5CBFCC;
+}
+
+.flexbox-item-5
+{
+    min-height: 250px;
+}
+
+.flexbox-item-6
+{
+    min-height: 511px;
+    width: 100%;
+}
+
+.filler
+{
+    background: #fff;
+}
+
+.box-container
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.box-item
+{
+    background-color: blue;
+    height: 122px;
+    width: 264px;
+    box-sizing: border-box;
+}
+
+.box-container-first, .box-container-second, .box-container-thrid, .box-container-fourth
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.call-to-action
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nyhedsbrev-cta, .bliv-kontaktet-cta
+{
+    width: 337px;
+    height: 110px;
+    text-align: center;
+    background-color: #FF5B4C;
+}
+
+.footer
+{
+    background-color: #273B9C;
+}
