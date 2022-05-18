@@ -148,12 +148,116 @@ p
     justify-content: space-around;
 }
 
+.footer-middle h4
+{
+    margin: 10px 0 0 10px;
+}
+
 .footer-kbh-maps, .footer-aarhus-maps, .footer-odense-maps, .footer-malmo-maps
 {
-    width: 100%;
-    height: 45%;
-    background-color: blue;
+    width: 300px;
+    height: 200px;
+    background-color: white;
     z-index: 1;
     display: flex;
     flex-direction: column;
+    position: relative;
+    margin-top: 32.5px;
+}
+
+.logo-footer
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.socials-footer
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 10px 0 10px;
+}
+
+.social-box
+{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-facebook, .fa-twitter, .fa-linkedin, .fa-instagram
+{
+    text-align: center;
+    top: 50%;
+    text-decoration: none;
+    color: black;
+    font-size: 200px;
+    transform: translateY(13px);
+}
+
+.text-footer-left
+{
+    display: table;
+    margin: 40px 0 0 25px;
+}
+
+.text-footer-left-ul
+{
+    max-width: 50%;  
+}
+
+.text-footer-left-ul li
+{
+    display: inline;
+    font-size: 20px;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+.footer-maps
+{
+    display: table;
+}
+
+.footer-maps-ul
+{  
+    margin: 10px 0 0 10px;
+}
+
+.footer-maps-ul li
+{
+    display: inline;
+    font-size: 15px;
+}
+
+.footer-maps-container
+{
+    width: 40%;
+    height: auto;
+}
+
+.footer-maps-location
+{
+    width: 60%;
+    float: right;
+    height: 60%;
+    transform: translateY(-47.5%);
+}
+
+.logo-footer
+{
+    max-width: 150%;
+    /* max-height: 100%; */
+    object-fit: cover;
+    border-top-left-radius: 55px 100px;
+    border-bottom-left-radius: 55px 100px;
 }
