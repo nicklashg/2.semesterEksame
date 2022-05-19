@@ -1,0 +1,192 @@
+body 
+{
+  background: #0f3343;
+  font: 15px/20px Arial, sans-serif;
+}
+
+.carousel-container 
+{
+  margin: 0 auto;
+  padding: 200px 0;
+  width: 250px;
+  height: 200px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.carousel 
+{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1.5s;
+}
+
+.item 
+{
+  display: block;
+  position: absolute;
+  background: #000;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  font-size: 5em;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.a 
+{
+  transform: rotateY(0deg) translateZ(400px);
+  background: url("cases/746_50057.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.b 
+{
+  transform: rotateY(30deg) translateZ(400px);
+  background: url("cases/bk.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.c 
+{
+  transform: rotateY(60deg) translateZ(400px);
+  background: url("cases/boncept.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.d 
+{
+  transform: rotateY(90deg) translateZ(400px);
+  background: url("cases/djoef_3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.e 
+{
+  transform: rotateY(120deg) translateZ(400px);
+  background: url("cases/image-7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.f 
+{
+  transform: rotateY(150deg) translateZ(400px);
+  background: url("cases/kia-cd-cuv-phev-my20-driving-t.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.g
+{
+  transform: rotateY(180deg) translateZ(400px);
+  background: url("cases/leo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.h 
+{
+  transform: rotateY(210deg) translateZ(400px);
+  background: url("cases/lmwp_upsell_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.i
+{
+  transform: rotateY(240deg) translateZ(400px);
+  background: url("cases/mt_teaser_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.j 
+{
+  transform: rotateY(270deg) translateZ(400px);
+  background: url("cases/nnit-bg-ny.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.k 
+{
+  transform: rotateY(300deg) translateZ(400px);
+  background: url("cases/sst_heart.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.l 
+{
+  transform: rotateY(330deg) translateZ(400px);
+  background: url("cases/struersfoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.next, .prev 
+{
+   width: 48px;
+   height: 48px;
+   border-color: #000;
+   position: absolute;
+   top: 50%;
+   margin-top: -31px;
+}
+
+.prev
+{
+   border-bottom: 6px solid;
+   border-left: 6px solid;
+   transform: rotate(45deg);
+   left: 10px;
+}
+   
+.next
+{
+   border-bottom: 6px solid;
+   border-left: 6px solid;
+   transform: rotate(-135deg);
+   right: 10px;
+}
+
+.next:hover, .prev:hover
+{
+  cursor: pointer;
+}
+
+.carousel-title
+{
+  font-size: 15px;
+  z-index: 1;
+  color: #000;
+  transform: translateY(120px);
+}
+
+.carousel-titel
+{
+  font-size: 15px;
+  z-index: 1;
+  color: #000;
+}
