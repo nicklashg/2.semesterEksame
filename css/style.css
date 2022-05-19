@@ -34,6 +34,11 @@ p
     font-size: 20px;
 }
 
+ul
+{
+    list-style-type: none;
+}
+
 .flexbox-container
 {
     display: flex;
@@ -155,8 +160,10 @@ p
 
 .footer-kbh-maps, .footer-aarhus-maps, .footer-odense-maps, .footer-malmo-maps
 {
-    width: 300px;
-    height: 200px;
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 200px;
+    max-height: 200px;
     background-color: white;
     z-index: 1;
     display: flex;
@@ -165,9 +172,9 @@ p
     margin-top: 32.5px;
 }
 
-.logo-footer
+.logo-footer, .logo-footer-img
 {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
 }
 
@@ -218,14 +225,10 @@ p
     font-size: 20px;
 }
 
-ul
+.logo-footer
 {
-    list-style-type: none;
-}
-
-.footer-maps
-{
-    display: table;
+    max-width: 150%;
+    max-height: 100%;
 }
 
 .footer-maps-ul
@@ -247,17 +250,23 @@ ul
 
 .footer-maps-location
 {
-    width: 60%;
-    float: right;
-    height: 60%;
-    transform: translateY(-47.5%);
-}
-
-.logo-footer
-{
-    max-width: 150%;
-    /* max-height: 100%; */
-    object-fit: cover;
+    width: 40%;
+    height: 100%;
+    border: 1px solid red; 
     border-top-left-radius: 55px 100px;
     border-bottom-left-radius: 55px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
+
+.maps-footer-img
+{
+    max-width: 200px;
+    max-height: 200px;   
+    flex-shrink: 0;
+}
+
+
+
