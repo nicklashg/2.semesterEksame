@@ -1,0 +1,107 @@
+/* Content */
+
+.flexbox-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox-item
+{
+    width: 85%;
+    max-width: 1920px;
+    background-color: #dfdfdf;
+}
+
+.flexbox-item-1
+{
+    height: 940px;
+}
+
+.flexbox-item-2
+{
+    min-height: 1050px;
+}
+
+.flexbox-item-3
+{
+    min-height: 1360px;
+}
+
+.flexbox-item-4
+{
+    min-height: 428px;
+    width: 100%;
+    background-color: #5CBFCC;
+}
+
+.flexbox-item-5
+{
+    min-height: 250px;
+}
+
+.flexbox-item-6
+{
+    min-height: 511px;
+    width: 100%;
+}
+
+.filler
+{
+    background: #fff;
+}
+
+.box-container
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.box-item
+{
+    height: 122px;
+    width: 264px;
+    box-sizing: border-box;
+}
+
+.box-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-container-first, .box-container-second, .box-container-thrid, .box-container-fourth
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.flexbox-item-3 h1, .flexbox-item-4 h1
+{
+    margin-top: 40px;
+}
+
+.call-to-action
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nyhedsbrev-cta, .bliv-kontaktet-cta
+{
+    width: 337px;
+    height: 110px;
+    text-align: center;
+    background-color: #FF5B4C;
+}
+
+.nyhedsbrev-cta h3, .bliv-kontaktet-cta h3
+{
+    text-align: center;
+    margin-top: 32.5px;
+}
