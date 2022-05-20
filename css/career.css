@@ -31,6 +31,13 @@
 
 /* Filter CSS */
 
+.filterbox {
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
 .filter_container {
     overflow: hidden;
     width: 100%;
@@ -172,6 +179,13 @@
     border-top: 1px dotted #000;
 }
 
+.teambox-text {
+    font-size: 25px;
+    line-height: 35px;
+    color: #636674;
+    margin-bottom: 25px;
+}
+
 .teambox > h2 {
     font-size: 40px;
     margin-bottom: 25px;
@@ -179,14 +193,15 @@
     text-align: center;
 }
 
+
+/* Flip card */
+
 .flipbox {
     width: 100%;
     min-height: 50px;
     display: flex;
     justify-content: center;
 }
-
-/* Flip card */
 
 .flip-card {
     background-color: transparent;
@@ -283,8 +298,17 @@
     height: 50%;
 }
 
-.flip-inner-bottom-box h2, h4 {
+.flip-card h2, h4 {
     margin-bottom: 10px;
     color: #FFF;
     font-size: 25px;
+}
+
+.teambox > .flipbox:last-child > .flip-card:last-child > .flip-card-inner > .flip-card-back {
+    background-color: #ff5b4c;
+}
+
+.teambox > .flipbox:last-child > .flip-card:last-child > .flip-card-inner > .flip-card-back h2 {
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 20px;
 }
