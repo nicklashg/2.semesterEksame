@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Gotham,sans-serif;
+}
+
+h1
+{
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2
+{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+h3
+{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h4
+{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+p
+{
+    font-size: 20px;
+}
+
+a
+{
+    font-weight: normal;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+ul li
+{
+    margin-top: 10px;
+}
+    
+ul li:first-child
+{
+    margin-left: 0;
+}
+.box-shadow
+{
+    -webkit-box-shadow: 6px 6px 17px 1px rgba(0,0,0,0.39); 
+    box-shadow: 6px 6px 17px 1px rgba(0,0,0,0.39);
+}
+
+.box-shadow-2
+{
+    -webkit-box-shadow: -6px 0px 17px 9px rgba(0,0,0,0.10); 
+    box-shadow: -6px 0px 17px 9px rgba(0,0,0,0.10);
+}
+
+h1,h2,h3,h4,h5,p,a
+{
+    color: white;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    min-height: 800px;
+    padding-top: 75px;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.content {
+    max-width: 1500px;
+    margin: auto;
+    padding: 10px 25px;
+}
+
+.navbar {
+    width: 100%;
+    transition: all .3s ease;
+    background-color: #273b9c;
+}
+
+.navbar .sticky {
+    padding: 10px 0;
+    background: #273b9c;
+}
+
+.navbar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.navbar .menu-list{
+    display: inline-flex;
+}
+
+.menu-list li {
+    list-style: none;
+}
+
+.menu-list li a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.menu-list li a:hover {
+    text-decoration: underline;
+}
+  
+.highlight {
+    text-decoration: underline !important;
+    cursor: default;
+}
+  
+.logo img {
+    width: 200px;
+}
+  
+.icon {
+    color: #353854;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.icon.cancel-btn {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+  
+@media (max-width: 868px) {
+    .icon {
+        display: block;
+        color: #fff;
+    }
+
+    .icon.hide {
+        display: none;
+    }
+    .navbar .menu-list {
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        right: -100%;
+        width: 250px;
+        background: #273b9c;
+        display: block;
+        padding: 50px 0;
+        text-align: center;
+        transition: all .3s ease;
+        border-bottom-left-radius: 25px;
+    }
+
+    .navbar .menu-list.active {
+        right: 0%;
+    }
+
+    .navbar .menu-list li {
+        margin-top: 45px;
+    }
+
+    .navbar .menu-list li a {
+        font-size: 20px;
+    }
+}
+
+/* Footer */
+
+
+.footer
+{
+    background-color: #273B9C;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-left, .footer-right
+{
+    width: 25%;
+    height: 517px;
+}
+
+.footer-middle
+{
+    width: 50%;
+    height: 517px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-kbh-maps, .footer-aarhus-maps, .footer-odense-maps, .footer-malmo-maps
+{
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 200px;
+    max-height: 200px;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    position: relative;
+    margin-top: 32.5px;
+}
+
+.footer-maps-ul
+{
+    margin-left: 10px;
+}
+
+.logo-footer, .logo-footer-img
+{
+    max-width: 90%;
+    height: auto;
+}
+
+.socials-footer
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 10px 0 10px;
+}
+
+.social-box
+{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-facebook, .fa-twitter, .fa-linkedin, .fa-instagram
+{
+    text-align: center;
+    top: 50%;
+    text-decoration: none;
+    color: black;
+    font-size: 200px;
+    transform: translateY(13px);
+}
+
+.text-footer-left
+{
+    display: table;
+    margin: 40px 0 0 25px;
+}
+
+.text-footer-left-ul
+{
+    max-width: 50%;  
+}
+
+.text-footer-left-ul li
+{
+    display: inline;
+    font-size: 20px;
+}
+
+.logo-footer
+{
+    max-width: 150%;
+    max-height: 100%;
+}
+
+.footer-maps-ul
+{  
+    margin: 10px 0 0 10px;
+}
+
+.footer-maps-ul li
+{
+    display: inline;
+    font-size: 15px;
+}
+
+
+.footer-maps h1, .footer-maps h2, .footer-maps h3, .footer-maps h4, .footer-maps p, .footer-maps a
+{
+    color: #000;
+}
+
+.footer-maps-container
+{
+    width: 60%;
+    height: auto;
+}
+
+.footer-maps-location
+{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 55px 100px;
+    border-bottom-left-radius: 55px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.maps-footer-img
+{
+    width: auto;
+    /* max-width: 200px; */
+    max-height: 200px;   
+    flex-shrink: 0;
+}
+
+.footer-right-container
+{
+    margin: 10px 0 0 40px
+}
+.footer-info
+{
+    margin-top: 30px;
+}
+.footer-aabningstider
+{
+    margin-top: 110px;
+}
+.footer-info h4, .footer-aabningstider h4
+{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 868px) {
+    .icon {
+        display: block;
+        color: #fff;
+    }
+
+    .icon.hide {
+        display: none;
+    }
+    .navbar .menu-list {
+        position: fixed;
+        top: 0px;
+        right: -100%;
+        width: 250px;
+        background: #273b9c;
+        display: block;
+        padding: 50px 0;
+        text-align: center;
+        transition: all .3s ease;
+        border-bottom-left-radius: 25px;
+    }
+
+    .navbar .menu-list.active {
+        right: 0%;
+    }
+
+    .navbar .menu-list li {
+        margin-top: 45px;
+    }
+
+    .navbar .menu-list li a {
+        font-size: 20px;
+    }
+}
