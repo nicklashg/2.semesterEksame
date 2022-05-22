@@ -12,12 +12,15 @@
 {
     width: 85%;
     max-width: 1920px;
-    background-color: #dfdfdf;
+    
 }
 
 .flexbox-item-1
 {
     height: 940px;
+    width: 100%;
+    background: rgb(39,59,156);
+    background: linear-gradient(180deg, rgba(39,59,156,1) 0%, rgba(255,255,255,1) 100%);
 }
 
 .flexbox-item-2
@@ -27,19 +30,24 @@
 
 .flexbox-item-3
 {
-    min-height: 1360px;
+    min-height: 1150px;
+}
+
+.flexbox-item-2 h1, .flexbox-item-3 h1
+{
+    color: black;
 }
 
 .flexbox-item-4
 {
-    min-height: 428px;
+    min-height: 400px;
     width: 100%;
     background-color: #5CBFCC;
 }
 
 .flexbox-item-5
 {
-    min-height: 250px;
+    min-height: 200px;
 }
 
 .flexbox-item-6
@@ -98,6 +106,7 @@
     height: 110px;
     text-align: center;
     background-color: #FF5B4C;
+    margin-top: 50px;
 }
 
 .nyhedsbrev-cta h3, .bliv-kontaktet-cta h3
@@ -105,3 +114,4 @@
     text-align: center;
     margin-top: 32.5px;
 }
+
