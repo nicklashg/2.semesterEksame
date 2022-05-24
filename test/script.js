@@ -18,3 +18,6 @@ function rotate(e){
         "transform": "rotateY("+currdeg+"deg)"
     });
 }
+
+/* 'document.getElementsByClassName("button")' - tæller som array */
+

@@ -19,4 +19,4 @@ function rotate(e){
     });
 }
 
-console.log('lortet dur sgu');
+console.log('lortet dur sgu :)');
