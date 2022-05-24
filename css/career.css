@@ -75,6 +75,7 @@
     font-size: 15px;
     background-color: #f1f1f1;
     cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
 
 .button:hover {
@@ -140,10 +141,12 @@
     border-radius: 10px;
     color: #FFF;
     width: 175px;
+    transition: 0.2s ease-in-out;
 }
 
 .filterDiv:last-child > .jobbox > .jobbox_inner1 > a {
     width: 120px;
+    transition: 0.2s ease-in-out;
 }
 
 .jobbox_inner1 > a:hover {
@@ -166,6 +169,7 @@
     border-radius: 10px;
     color: #FFF;
     box-shadow: 2px 2px rgba(195, 195, 195, 0.8);
+    transition: 0.2s ease-in-out;
 }
 
 .job-bottombox > a:hover {
@@ -317,17 +321,15 @@
 
 /* Mobile responsive */
 
-@media (max-width: 1000px) {
-    .menu-list li a {
-        font-size: 15px;
-    }
-}
-
 @media (max-width: 868px) {
     .job-contentbox {
         padding: 50px 10%;
     }
     
+    .teambox {
+        padding: 50px 10%;
+    }
+
     .flipbox {
         flex-direction: column;
         align-items: center;

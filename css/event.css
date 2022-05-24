@@ -166,3 +166,29 @@
     width: 100%;
     height: auto;
 }
+
+@media (max-width: 868px) {
+
+    .event-upper-content {
+        padding: 50px 10%;
+    }
+
+    .eventlowertext {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .event-lower-content-info {
+        padding: 50px 10%;
+    }
+
+    .eventbox {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .event-display {
+        margin-bottom: 50px;
+    }
+}

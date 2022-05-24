@@ -540,6 +540,12 @@ header {
 }
 
 
+@media (max-width: 1000px) {
+    .menu-list li a {
+        font-size: 15px;
+    }
+}
+
 @media (max-width: 868px) {
     .icon {
         display: block;
