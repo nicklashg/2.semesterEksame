@@ -571,4 +571,60 @@ header {
     .navbar .menu-list li a {
         font-size: 20px;
     }
+
+    .footer
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-left
+    {
+        width: 100%;
+
+    }
+
+    .footer-middle
+    {
+        flex-direction: column;
+        margin-top: 175px;
+        margin-left: 80px;
+        align-items: center;
+    }
+
+    .footer-right
+    {
+        flex-direction: column;
+        margin-top: 250px;
+        width: 100%;
+        
+        align-items: center;
+    }
+
+    .flexbox-item-4
+    {
+        height: 350px !important;
+    }
+
+    .call-to-action
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .call-to-action > a
+    {
+        padding: 10px 15px !important;
+        font-size: 15px;
+        margin-bottom: 10px;
+        max-width: 50%;
+        margin-right: 30px;
+    }
+
+    .carousel-container
+    {
+        display: none;
+    }
 }
