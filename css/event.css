@@ -140,7 +140,6 @@
 .event-image {
     width: 100%;
     height: auto;
-    border: 0;
 }
 
 .event-lower-content-info {
@@ -181,6 +180,9 @@
 
     .event-lower-content-info {
         padding: 50px 10%;
+        flex-direction: column-reverse;
+        justify-content: none;
+        align-items: center;
     }
 
     .eventbox {
@@ -191,5 +193,17 @@
 
     .event-display {
         margin-bottom: 50px;
+    }
+
+    .event-mid-content > h2 {
+        font-size: 35px;
+    }
+
+    .event-lower-content-info > div {
+        width: 100%;
+    }
+    
+    .event-lower-content-info img {
+        margin-bottom: 25px;
     }
 }
