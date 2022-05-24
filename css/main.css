@@ -279,14 +279,8 @@ header {
     margin: 40px 0 0 25px;
 }
 
-.text-footer-left-ul
-{
-    max-width: 50%;  
-}
-
 .text-footer-left-ul li
 {
-    display: inline;
     font-size: 20px;
 }
 

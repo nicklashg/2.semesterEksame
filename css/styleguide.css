@@ -312,8 +312,7 @@ pre
 {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
-  margin-left: 20px;
+  margin: 20px 0 20px 0;
   width: 500px;
  
 }
@@ -326,6 +325,22 @@ pre
   top: 50%;
   display: flex;
   position: relative;
+}
+
+.farve-container
+{
+  margin: 50px 0 0 200px;
+  max-width: 960px;
+}
+
+.farve-tekst-top-p
+{
+  margin-top: 20px;
+}
+
+.farve-tekst-top-second
+{
+  margin-top: 20px;
 }
 
 #farve-blue
