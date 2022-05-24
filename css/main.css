@@ -81,14 +81,11 @@ body {
 main {
     width: 100%;
     min-height: 800px;
-    padding-top: 75px;
 }
 
 /* HEADER */
 
 header {
-    position: fixed;
-    z-index: 1;
     width: 100%;
 }
 
