@@ -1,9 +1,6 @@
-.eventheader {
+.eventvideo {
     width: 100%;
-    min-height: 800px;
-    background-image: url("../mediefiler/png/event-header.PNG");
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: auto;
     border-bottom: 1px solid #353854;
 }
 

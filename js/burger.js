@@ -1,4 +1,4 @@
-console.log("It's working yay!")
+console.log("It's working yay! - Burger")
 
 let navbar = document.querySelector(".navbar");
 let menu = document.querySelector(".menu-list");
