@@ -1,0 +1,96 @@
+body{
+  font-family: 'Poppins';
+}
+
+.form {
+  float: left;
+  margin-left: 20%;
+}
+
+.undertekst{
+  text-align: left;
+  margin-left: 20%;
+}
+
+.contacttext{
+  font-size: 20px;
+}
+
+.feedback-input {
+  color: black;
+  font-family: Poppins, sans-serif;
+  font-weight:300;
+  font-size: 12px;
+  border-radius: 3px;
+  line-height: 12px;
+  background-color: transparent;
+  border:1px solid #707070;
+  padding: 7px;
+  margin-bottom: 10px;
+  width:80%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus {
+  border:2px
+  solid #black;
+
+}
+
+textarea {
+  height: 100px;
+  line-height: 120%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: Poppins, sans-serif;
+  width: 80%;
+  background: #5F2813;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color: white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+
+  margin-top:-4px;
+  font-weight:700;
+}
+
+input[type=submit]:hover {
+  background-color: #AE957E;
+  color: #F7F1E9;
+}
+
+
+.contactinfo {
+  display: grid;
+  background: #F7F1E9;
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: 20%;
+  grid-gap: 1.5rem;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.contactbox{
+  position: relative;
+}
+
+.infotext{
+  float: left;
+  padding: 5px;
+  text-align: left;
+}
+
+.infoboxlogo{
+  float: left;
+  padding: 10px;
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+}
