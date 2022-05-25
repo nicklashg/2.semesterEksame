@@ -1,13 +1,13 @@
 console.log("It's working yay - Filter!");
 let x, activeDivs = [];
 let y;
-let lars;
+let last;
 
 // Select filter
 filterSelection("all")
 function filterSelection(c) {
     let i;
-    lars = c;
+    last = c;
     activeDivs = [];
     
     x = document.getElementsByClassName("filterDiv");
