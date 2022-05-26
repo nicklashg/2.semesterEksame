@@ -19,5 +19,6 @@ function rotate(e){
     });
 }
 
+
 console.log('lortet dur sgu :)');
 

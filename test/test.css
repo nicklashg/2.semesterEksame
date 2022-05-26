@@ -1,0 +1,22 @@
+*
+{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.words-container
+{
+    margin: 100px 0 0 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+ul
+{
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    margin-top: 16px;
+    padding-left: 20px;
+
+}

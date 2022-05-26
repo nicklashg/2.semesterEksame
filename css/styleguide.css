@@ -1,10 +1,10 @@
 /* Google Font Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins" , sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html, body 
@@ -12,12 +12,37 @@ html, body
     margin: 0;
     height: 100%;
     max-width: 100%;
-    overflow: hidden;
 }
 
 body
 {
     background: #E4E9F7;
+}
+
+.font-size-l, .font-size-m, .font-size-s, .font-size-xs
+{
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.font-size-l
+{
+  font-size: 70px;
+}
+
+.font-size-m
+{
+  font-size: 50px;
+}
+
+.font-size-s
+{
+  font-size: 40px;
+}
+
+.font-size-xs
+{
+  font-size: 25px;
 }
 
 .sidebar
@@ -38,7 +63,7 @@ body
   width: 250px;
 }
 
-.sidebar .logo-details
+.logo-details
 {
   height: 60px;
   display: flex;
@@ -149,7 +174,6 @@ body
 
 .sidebar
 {
-  position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
@@ -278,8 +302,14 @@ body
 .container
 {
     width: 80%;
-    margin-left: 2%;
-    margin-top: 20px;
+    margin: 50px 0 0 200px;
+    max-width: 960px;
+}
+
+.container > h1, .container > p
+{
+  margin-bottom: 20px;
+  width: 80%;
 }
 
 pre
@@ -295,17 +325,27 @@ pre
 
 .alfabet
 {
-    width: 600px;
+    width: 80%;
     background-color: #fff;
     display: flex;
     text-align: center;
 }
 
+
 .alfabet-html
 {
     background-color: rgb(233, 230, 230);
-    width: 600px;
+    width: 80%;
     height: 30px;
+    margin-bottom: 40px;
+}
+
+.alfabet-html-xs-margin
+{
+    background-color: rgb(233, 230, 230);
+    width: 80%;
+    height: 30px;
+    margin-bottom: 10px;
 }
 
 .farve-bokse
@@ -325,12 +365,6 @@ pre
   top: 50%;
   display: flex;
   position: relative;
-}
-
-.farve-container
-{
-  margin: 50px 0 0 200px;
-  max-width: 960px;
 }
 
 .farve-tekst-top-p
