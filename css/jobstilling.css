@@ -15,6 +15,10 @@ h1 {
   width: 100%;
 }
 
+.formtext {
+  color: #636674;
+}
+
 .classform {
   display: flex;
   flex-direction: column;
@@ -39,11 +43,19 @@ h1 {
   padding: 10px 20px;
   background-color: #ED94A8;
   border-radius: 10px;
+  border: 1px solid #ED94A8;
   color: #FFF;
   width: 155px;
   font-size: 15px;
   transition: 0.2s ease-in-out;
   margin-top: 30px;
+  box-shadow: 2px 2px rgb(195 195 195 / 80%);
+}
+
+.sendknap:hover {
+  background-color: #FFF;
+  cursor: pointer;
+  color: #ED94A8;
 }
 
 .knapper {
@@ -77,9 +89,7 @@ h1 {
 }
 
 .feedback-input:focus {
-  border:2px
-  solid #black;
-
+  border:2px solid #000;
 }
 
 textarea {
