@@ -624,8 +624,19 @@ header {
         margin-right: 30px;
     }
 
+    .testtest
+    {
+    
+    }
+
     .carousel-container
     {
-        display: none;
+        object-fit: cover;
+    }
+
+    .a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .k, .l 
+    {
+        width: 80px;
+        height: 80px;
     }
 }
