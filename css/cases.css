@@ -157,4 +157,35 @@
     {
         flex-direction: row;
     }
+
+    .filler
+    {
+        display: none;
+    }
+
+    .flexbox-item-4
+    {
+        margin-bottom: 100px;
+        min-height: 300px;
+    }
+
+    .bliv-kontaktet-cta, .nyhedsbrev-cta
+    {
+        width: 140px;
+        height: 60px;
+        text-align: center;
+        background-color: #FF5B4C;
+        margin-top: 50px;
+    }
+
+    .bliv-kontaktet-cta > h3, .nyhedsbrev-cta > h3
+    {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .flexbox-item-2 > h1, .flexbox-item-3 > h1, .flexbox-item-4 > h1
+    {
+        font-size: 50px;
+    }
 }
