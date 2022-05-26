@@ -6,6 +6,8 @@
     font-family: Montserrat,sans-serif;
 }
 
+
+
 h1
 {
     font-size: 70px;
@@ -493,12 +495,11 @@ header {
 
 .next, .prev 
 {
-   width: 48px;
-   height: 48px;
+   width: 24px;
+   height: 24px;
    border-color: #000;
    position: absolute;
    top: 50%;
-   margin-top: -31px;
 }
 
 .prev
@@ -625,6 +626,12 @@ header {
 
     .carousel-container
     {
-        display: none;
+        object-fit: cover;
+    }
+
+    .a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .k, .l 
+    {
+        width: 80px;
+        height: 80px;
     }
 }
