@@ -116,11 +116,10 @@
 
 .box-item-vi-tilbyder > h3
 {
-    color: #000;
+    color: #fff;
     text-align: center;
     margin-top: 10px;
     font-size: 30px;
-    font-weight: lighter;
 }
 
 .box-container-first, .box-container-second, .box-container-thrid, .box-container-fourth
