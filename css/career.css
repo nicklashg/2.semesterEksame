@@ -305,7 +305,7 @@
     font-size: 15px;
 }
 
-.flip-card h2, h4 {
+.flip-card h2, .flip-card h4 {
     margin-bottom: 10px;
     color: #FFF;
     text-align: center;
