@@ -85,6 +85,12 @@ main {
     min-height: 800px;
 }
 
+video {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #353854;
+}
+
 /* HEADER */
 
 header {
@@ -233,7 +239,7 @@ header {
 
 .footer-maps-ul
 {
-    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .logo-footer, .logo-footer-img
@@ -289,11 +295,6 @@ header {
     max-height: 100%;
 }
 
-.footer-maps-ul
-{  
-    margin: 10px 0 0 10px;
-}
-
 .footer-maps-ul li
 {
     display: inline;
@@ -310,6 +311,8 @@ header {
 {
     width: 60%;
     height: auto;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 .footer-maps-location
