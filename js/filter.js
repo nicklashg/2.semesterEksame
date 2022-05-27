@@ -1,82 +1,84 @@
 console.log("It's working yay - Filter!");
-let x, activeDivs = [];
+let allDivs, activeDivs = [];
+let criteriaDiv, showClass;
 
-// Select filter
+// Starts with the all filter selected
 filterSelection("all")
+
+// Job filter function
 function filterSelection(criteria) {
-    let i;
     activeDivs = [];
 
-    x = document.getElementsByClassName("filterDiv");
+    allDivs = document.getElementsByClassName("filterDiv");
     
     if (criteria == "all") criteria = "";
 
-    // Adds class show based if criteria is either all or one of the job classes
-    for (i = 0; i < x.length; i++) {
+    // Removes class show on all activeDivs
+    for (let i = 0; i < allDivs.length; i++) {
         
-        let currentClassNameIndex = x[i].className.indexOf(criteria);
+        let currentClassName = allDivs[i].className.indexOf(criteria);
 
-        removeClass(x[i], "show");
+        removeClass(allDivs[i], "show");
 
-        if (currentClassNameIndex > -1) {
-            addClass(x[i], "show");
-            activeDivs.push(x[i]);
+        // Adds class show to activeDivs array if selected job criteria is on allDivs
+        if (currentClassName > -1) {
+            addClass(allDivs[i], "show");
+            activeDivs.push(allDivs[i]);
         };
     }
     console.log(activeDivs);
 }
 
-// Location filter
+// Location filter function
 function filterLocation(criteria) {
-    let i;
 
-    // Removes class show
-    for (i = 0; i < activeDivs.length; i++) {
+    // Removes class show on all selected activeDivs
+    for (let i = 0; i < activeDivs.length; i++) {
 
-        let currentClassNameIndex = x[i].className.indexOf(criteria);
+        let currentClassLocation = activeDivs[i].className.indexOf(criteria);
 
         removeClass(activeDivs[i], "show");
-        // Adds class show if selected
-        if (currentClassNameIndex > -1) {
+        // Adds class show if selected location criteria is on activeDivs
+        if (currentClassLocation > -1) {
             addClass(activeDivs[i], "show");
         };
     }
     console.log(activeDivs);
 }
 
-// Show filtered elements
+// Show selected divs
 function addClass(element, name) {
-    let i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
+    criteriaDiv = element.className.split(" ");
+    showClass = name.split(" ");
     
-    for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {
-            element.className += " " + arr2[i];
+    // If criteriaDiv doesn't have show class, then it will add it
+    for (let i = 0; i < showClass.length; i++) {
+        if (criteriaDiv.indexOf(showClass[i]) == -1) {
+            element.className += " " + showClass[i];
         }
     }
 }
 
-// Hide non-selected elements
+// Hide non-selected divs
 function removeClass(element, name) {
-    let i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
+    criteriaDiv = element.className.split(" ");
+    showClass = name.split(" ");
 
-    for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
+    // if criteraDiv have show class, removes it
+    for (let i = 0; i < showClass.length; i++) {
+        while (criteriaDiv.indexOf(showClass[i]) > -1) {
+            criteriaDiv.splice(criteriaDiv.indexOf(showClass[i]), 1);
         }
     }
-    element.className = arr1.join(" ");
+    element.className = criteriaDiv.join(" ");
 }
 
 // Add active class to the highlighted button
 let buttonContainer = document.getElementById("BtnContainer");
-let butt = buttonContainer.getElementsByClassName("button");
+let button = buttonContainer.getElementsByClassName("button");
 
-for (let i = 0; i < butt.length; i++) {
-    butt[i].addEventListener("click", function() {
+for (let i = 0; i < button.length; i++) {
+    button[i].addEventListener("click", function() {
         let current = document.getElementsByClassName("active");
         current[0].className = current[0].className.replace(" active", "");
         this.className += " active";
