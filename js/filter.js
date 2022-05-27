@@ -1,24 +1,24 @@
 console.log("It's working yay - Filter!");
 let x, activeDivs = [];
-let y;
-let last;
 
 // Select filter
 filterSelection("all")
-function filterSelection(c) {
+function filterSelection(criteria) {
     let i;
-    last = c;
     activeDivs = [];
-    
-    x = document.getElementsByClassName("filterDiv");
-    if (c == "all") c = "";
 
-    // Removes class show
+    x = document.getElementsByClassName("filterDiv");
+    
+    if (criteria == "all") criteria = "";
+
+    // Adds class show based if criteria is either all or one of the job classes
     for (i = 0; i < x.length; i++) {
+        
+        let currentClassNameIndex = x[i].className.indexOf(criteria);
 
         removeClass(x[i], "show");
-        // Adds class show if selected
-        if (x[i].className.indexOf(c) > -1) {
+
+        if (currentClassNameIndex > -1) {
             addClass(x[i], "show");
             activeDivs.push(x[i]);
         };
@@ -27,14 +27,17 @@ function filterSelection(c) {
 }
 
 // Location filter
-function filterLocation(c) {
+function filterLocation(criteria) {
     let i;
 
     // Removes class show
     for (i = 0; i < activeDivs.length; i++) {
+
+        let currentClassNameIndex = x[i].className.indexOf(criteria);
+
         removeClass(activeDivs[i], "show");
         // Adds class show if selected
-        if (activeDivs[i].className.indexOf(c) > -1) {
+        if (currentClassNameIndex > -1) {
             addClass(activeDivs[i], "show");
         };
     }
@@ -72,7 +75,7 @@ function removeClass(element, name) {
 let buttonContainer = document.getElementById("BtnContainer");
 let butt = buttonContainer.getElementsByClassName("button");
 
-for (var i = 0; i < butt.length; i++) {
+for (let i = 0; i < butt.length; i++) {
     butt[i].addEventListener("click", function() {
         let current = document.getElementsByClassName("active");
         current[0].className = current[0].className.replace(" active", "");
