@@ -1,31 +1,28 @@
-console.log("Dropdown activated");
+let opretArray = new Array("Jeg hørte om jobbet igennem:", "Netværk", "Sociale medier", "Google", "Medier", "Andet");
+let dropdown = document.getElementById("vælgEmne");
+
+for (let i = 0; i < opretArray.length; i=i+1) {
+    dropdown[i] = new Option(opretArray[i], opretArray[i]);
+}
 
 
 function dropDown() {
     document.getElementById("vælgEmne").classList.toggle("show");
 }
 
-let opretArray = new Array("Jeg hørte om jobbet igennem:", "Netværk", "Sociale medier", "Google", "Medier", "Andet");
 
-    let dropdown = document.getElementById("vælgEmne");
+function myFunction() {
 
-    for (let i = 0; i < opretArray.length; ++i) {
-        dropdown[dropdown.length] = new Option(opretArray[i], opretArray[i]);
+    // Accessing form using its classname
+    let form = document.getElementsByClassName("classform")[0];
+
+    // Getting the email value
+    let emailvalue = form.elements.email.value;
+
+    // Checking whether its filled
+    if (emailvalue === "") {
+        alert("udfyld felt");
+    } else {
+        alert( "Din besked er sendt!" );
     }
-
-
-
-    function myFunction() {
-            console.log("Har trykket");
-            let emailvalue = document.getElementsByClassName("classform")[0].elements.email.value
-            if (emailvalue === "")
-            {
-            alert("udfyld felt");
-            return false;
-            }
-            else
-            {
-            alert( "Din besked er sendt!" );
-            return true;
-            }
-            }
+}
