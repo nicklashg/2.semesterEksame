@@ -13,19 +13,19 @@ let opretArray = new Array("Jeg hørte om jobbet igennem:", "Netværk", "Sociale
         dropdown[dropdown.length] = new Option(opretArray[i], opretArray[i]);
     }
 
+
+
     function myFunction() {
             console.log("Har trykket");
-            let response = ["Udfyld felt", "Din besked er sendt!"];
-            let empt = document.form1.Titel.value;
-            if (empt === "")
+            let emailvalue = document.getElementsByClassName("classform")[0].elements.email.value
+            if (emailvalue === "")
             {
-            alert( response[0] );
+            alert("udfyld felt");
             return false;
             }
             else
             {
-            alert( response[1] );
+            alert( "Din besked er sendt!" );
             return true;
-            document.getElementById("demo").innerHTML = "Good day";
             }
             }
