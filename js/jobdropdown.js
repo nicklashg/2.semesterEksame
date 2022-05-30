@@ -1,4 +1,3 @@
-
 let opretArray = new Array("Jeg hørte om jobbet igennem:", "Netværk", "Sociale medier", "Google", "Medier", "Andet");
 let dropdown = document.getElementById("vælgEmne");
 
@@ -20,7 +19,7 @@ function confirmSend() {
     // Tjekker om den er fyldt
     let emailvalue = form.elements.email.value;
 
-    // Tjekker igen om den er fyldt 
+    // Tjekker igen om den er fyldt
     if (emailvalue === "") {
         alert("udfyld felt");
     } else {
