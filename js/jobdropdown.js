@@ -12,7 +12,7 @@ function dropDown() {
 }
 
 
-function myFunction() {
+function confirmSend() {
 
     // Accessing form using its classname
     let form = document.getElementsByClassName("classform")[0];
