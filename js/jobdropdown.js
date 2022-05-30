@@ -1,3 +1,4 @@
+
 let opretArray = new Array("Jeg hørte om jobbet igennem:", "Netværk", "Sociale medier", "Google", "Medier", "Andet");
 let dropdown = document.getElementById("vælgEmne");
 
