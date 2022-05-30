@@ -1,3 +1,6 @@
+/* Gøres brug af JQuery */
+/* $ selecter det der står inde i parentecen efterfølgende */
+
 let carousel = $(".carousel");
 let currdeg = 0;
 

@@ -163,6 +163,11 @@
 
 @media (max-width: 868px) {
 
+    body
+    {
+        overflow-x: hidden;
+    }
+
 
     .box-container-all
     {
@@ -183,7 +188,7 @@
     .box-splitter
     {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
