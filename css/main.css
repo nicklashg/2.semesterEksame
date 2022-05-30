@@ -91,6 +91,14 @@ video {
     border-bottom: 1px solid #353854;
 }
 
+.indextitle {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #636674;
+}
+
 /* HEADER */
 
 header {
