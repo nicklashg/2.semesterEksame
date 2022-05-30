@@ -21,7 +21,7 @@ function confirmSend() {
 
     // Tjekker igen om den er fyldt
     if (emailvalue === "") {
-        alert("udfyld felt");
+        alert("Udfyld felt");
     } else {
         alert( "Din besked er sendt!" );
     }
