@@ -14,13 +14,13 @@ function dropDown() {
 
 function confirmSend() {
 
-    // Accessing form using its classname
+    // Tilgår formen via dets classname
     let form = document.getElementsByClassName("classform")[0];
 
-    // Getting the email value
+    // Tjekker om den er fyldt
     let emailvalue = form.elements.email.value;
 
-    // Checking whether its filled
+    // Tjekker igen om den er fyldt 
     if (emailvalue === "") {
         alert("udfyld felt");
     } else {
