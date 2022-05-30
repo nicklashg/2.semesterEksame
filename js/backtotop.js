@@ -1,6 +1,5 @@
 mybutton = document.getElementById("myBtn");
 let colors = ['purple', 'yellow', 'orange', 'brown', 'black'];
-let running = 0;
 
 window.onscroll = function () {scrollFunction()};
 
