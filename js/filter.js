@@ -1,86 +1,98 @@
 console.log("It's working yay - Filter!");
-let allDivs, activeDivs = [];
-let criteriaDiv, showClass;
 
-// Starts with the all filter selected
-filterSelection("all")
+let activeDivs = [];
 
-// Job filter function
-function filterSelection(criteria) {
-    activeDivs = [];
+// Select filter
+filterSelection("all");
 
-    allDivs = document.getElementsByClassName("filterDiv");
+// Filter job function
+function filterSelection(filterCriteria) {
+	activeDivs = [];
+
+	let allFilterDivs = document.getElementsByClassName("filterDiv");
     
-    if (criteria == "all") criteria = "";
+	if (filterCriteria == "all") filterCriteria = "";
+    
+	for (let i = 0; i < allFilterDivs.length; i++) {
+        // Removes show class on allFilterDivs
+		removeClass(allFilterDivs[i], "show");
 
-    // Removes class show on all activeDivs
-    for (let i = 0; i < allDivs.length; i++) {
-        
-        let currentClassName = allDivs[i].className.indexOf(criteria);
+		let currentClassName = allFilterDivs[i].className.indexOf(filterCriteria);
 
-        removeClass(allDivs[i], "show");
+        // If allFilterDivs have specified filterCriteria, adds show
+		if (currentClassName != -1) {
+			addClass(allFilterDivs[i], "show");
 
-        // Adds class show to activeDivs array if selected job criteria is on allDivs
-        if (currentClassName > -1) {
-            addClass(allDivs[i], "show");
-            activeDivs.push(allDivs[i]);
-        };
-    }
-    console.log(activeDivs);
+			activeDivs.push(allFilterDivs[i]);
+
+		}
+	}
+
+	console.log(activeDivs);
 }
 
 // Location filter function
-function filterLocation(criteria) {
+function filterLocation(filterCriteria) {
 
-    // Removes class show on all selected activeDivs
-    for (let i = 0; i < activeDivs.length; i++) {
+	for (let i = 0; i < activeDivs.length; i++) {
+        // Removes class show
+		removeClass(activeDivs[i], "show");
 
-        let currentClassLocation = activeDivs[i].className.indexOf(criteria);
+		let currentClassName = activeDivs[i].className.indexOf(filterCriteria);
 
-        removeClass(activeDivs[i], "show");
-        // Adds class show if selected location criteria is on activeDivs
-        if (currentClassLocation > -1) {
-            addClass(activeDivs[i], "show");
-        };
-    }
-    console.log(activeDivs);
-}
+		// Adds show class on activeDivs, if selected location criteria is selected
+		if (currentClassName != -1) {
+			addClass(activeDivs[i], "show");
+		}
+	}
 
-// Show selected divs
-function addClass(element, name) {
-    criteriaDiv = element.className.split(" ");
-    showClass = name.split(" ");
+	console.log(activeDivs);
     
-    // If criteriaDiv doesn't have show class, then it will add it
-    for (let i = 0; i < showClass.length; i++) {
-        if (criteriaDiv.indexOf(showClass[i]) == -1) {
-            element.className += " " + showClass[i];
-        }
-    }
 }
 
-// Hide non-selected divs
+// Show filtered elements
+function addClass(element, name) {
+	
+	let classNames = element.className.split(" ");
+
+	// If classNames string doesn't have show, adds it
+	if (classNames.indexOf(name) == -1) {
+		element.className += " " + name;
+	}  
+}
+
+// Hide non-selected elements
 function removeClass(element, name) {
-    criteriaDiv = element.className.split(" ");
-    showClass = name.split(" ");
 
-    // if criteraDiv have show class, removes it
-    for (let i = 0; i < showClass.length; i++) {
-        while (criteriaDiv.indexOf(showClass[i]) > -1) {
-            criteriaDiv.splice(criteriaDiv.indexOf(showClass[i]), 1);
-        }
-    }
-    element.className = criteriaDiv.join(" ");
+	let classNames = element.className.split(" ");
+
+	// If classNames string have show, removes it
+	if (classNames.indexOf(name) != -1) {
+		classNames.splice(classNames.indexOf(name), 1);
+	}
+    
+	element.className = classNames.join(" ");
 }
 
-// Add active class to the highlighted button
-let buttonContainer = document.getElementById("BtnContainer");
-let button = buttonContainer.getElementsByClassName("button");
-
-for (let i = 0; i < button.length; i++) {
-    button[i].addEventListener("click", function() {
-        let current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-    });
+// Hightlight button function
+function hightlightButton() {
+	
+	let current = document.getElementsByClassName("active");
+    // Removes active from buttons and adds to the selected one
+	current[0].className = current[0].className.replace(" active", "");
+	this.className += " active";
 }
+
+// Add buttons
+function addButtons() {
+	
+	let buttonContainer = document.getElementById("BtnContainer");
+	let buttons = buttonContainer.getElementsByClassName("button");
+
+    // Highlights the selected button
+	for (let i = 0; i < buttons.length; i++) {
+		buttons[i].addEventListener("click", hightlightButton);
+	}
+}
+
+addButtons();
