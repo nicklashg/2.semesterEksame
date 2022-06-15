@@ -34,4 +34,4 @@ function topFunction()
     {
         mybutton.style.backgroundColor = colors[i];
     }
-}
+} 
